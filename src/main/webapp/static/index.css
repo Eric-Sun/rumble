@@ -1,0 +1,566 @@
+#top-banner {
+  background: url('//img.morejoy.cc/pc2/kitchen-top.png') center center;
+  background-size: auto 800px;
+  min-width: 1220px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+#top-banner > div {
+  height: 600px;
+  background: rgba(39, 55, 84, 0.7);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#top-banner .content {
+  position: absolute;
+  width: 800px;
+  margin-left: -400px;
+  top: 120px;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+#top-banner .content h2 {
+  font-size: 63px;
+  line-height: 88px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#top-banner .content h3 {
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 8px;
+}
+
+#top-banner .content .price {
+  font-size: 70px;
+  line-height: 98px;
+  margin-bottom: 16px;
+  vertical-align: text-bottom;
+  font-weight: lighter;
+}
+
+#top-banner .content .unit {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+#top-banner .content .more {
+  text-align: center;
+}
+
+#top-banner .content a {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffe5ca;
+  text-decoration: none;
+  background: url('//img.morejoy.cc/pc2/link-more-arrow.png') right 3px center no-repeat;
+  background-size: 12px 12px;
+  padding: 0 18px;
+}
+
+#top-banner .bottom-desc{
+  background: rgba(39, 55, 84, 0.5);
+  height: 96px;
+  width: 100%;
+}
+
+#top-banner .bottom-desc .measure-now {
+  display: inline-block;
+  width: 100%;
+  height: 96px;
+  background: #f0871d;
+  font-size: 26px;
+  line-height: 96px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.9;
+  transition: 0.6s opacity;
+}
+
+#top-banner .bottom-desc .measure-now:hover {
+  opacity: 1;
+  transition: 0.6s opacity;
+}
+
+#top-banner .bottom-desc .inner-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+#top-banner .bottom-desc .inner-wrapper > div {
+  height: 96px;
+  box-sizing: border-box;
+  width: 20%;
+  padding-left: 40px;
+  padding-top: 26px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#top-banner .bottom-desc .inner-wrapper > div:last-child{
+  padding-left: 0;
+  padding-top: 0;
+}
+
+
+#top-banner .bottom-desc h4 {
+  font-size: 18px;
+  color: #fff;
+  line-height: 25px;
+}
+
+#top-banner .bottom-desc p {
+  font-size: 14px;
+  color: #fff;
+}
+
+#product-list .item {
+  height: 400px;
+  margin-bottom: 16px;
+  position: relative;
+  transition: all 1.2s;
+  cursor: pointer;
+  display: block;
+}
+
+#product-list  .item:hover {
+  background-size: 1342px 440px !important;
+  transition: all 1.2s;
+}
+
+
+
+#product-list .item:nth-child(odd) .content {
+  left: 0;
+}
+
+#product-list .item:nth-child(even) .content {
+  right: 0;
+}
+
+#product-list .content {
+  position: absolute;
+  top: 0;
+  width: 450px;
+  box-sizing: border-box;
+  height: 400px;
+  padding-top: 109px;
+  padding-left: 47px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+#product-list .title {
+  font-size: 38px;
+  line-height: 53px;
+  color: #273754;
+}
+
+#product-list .desc {
+  font-size: 22px;
+  color: #273754;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+#product-list .price {
+  font-size: 44px;
+  line-height: 62px;
+  color: #273754;
+  margin-bottom: 29px;
+  font-weight: lighter;
+  vertical-align: text-bottom;
+}
+
+#product-list .unit {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+#product-list .more span{
+  display: inline-block;
+  color: #f0871d;
+  padding: 9px 28px;
+  border: 1px solid #f0871d;
+
+}
+
+#bottom-desc {
+  height: 400px;
+  background: #373e41;
+}
+
+
+#bottom-desc .inner-wrapper {
+  display: flex;
+}
+
+#bottom-desc .inner-wrapper > div {
+  width: 25%;
+  background: rgba(0, 0, 0, 0.3);
+  height: 400px;
+  color: #fff;
+}
+
+#bottom-desc .inner-wrapper > div:nth-child(1) {
+  background: url('//img.morejoy.cc/pc2/feature-image-1.png') center center no-repeat;
+}
+
+#bottom-desc .inner-wrapper > div:nth-child(2) {
+  background: url('//img.morejoy.cc/pc2/feature-image-2.png') center center no-repeat;
+}
+
+#bottom-desc .inner-wrapper > div:nth-child(3) {
+  background: url('//img.morejoy.cc/pc2/feature-image-3.png') center center no-repeat;
+}
+
+#bottom-desc .inner-wrapper > div:nth-child(4) {
+  background: url('//img.morejoy.cc/pc2/feature-image-4.png') center center no-repeat;
+}
+
+#bottom-desc .item {
+  background: rgba(0, 0, 0, 0.7);
+  height: 400px;
+  padding-top: 208px;
+  cursor: pointer;
+  transition: 0.6s all;
+}
+
+#bottom-desc .item:hover {
+  padding-top: 128px;
+  background: rgba(240, 135, 29, 0.8);
+  transition: 0.6s all;
+}
+
+#bottom-desc .item:hover .desc {
+  opacity: 1;
+  transition: 0.6s all;
+}
+
+#bottom-desc .title {
+  font-size: 26px;
+  line-height: 37px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 59px;
+  text-align: center;
+}
+
+#bottom-desc .title::before {
+  content: '';
+  width: 38px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  margin-left: -19px;
+
+}
+
+#bottom-desc .desc {
+  font-size: 17px;
+  line-height: 24px;
+  padding: 0 33px;
+  opacity: 0;
+  transition: 0.6s all;
+}
+
+#flow {
+  min-width: 1220px;
+  height: 440px;
+  background: #f8f8f9;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+
+#flow .flow {
+  display: flex;
+  justify-content: center;
+}
+
+#flow .icon {
+  width: 94px;
+  height: 116px;
+  background-size: 94px 116px !important;
+}
+
+#flow .desc {
+  margin-bottom: 80px;
+}
+
+#flow .icon:nth-child(1) {
+  background: url('//img.morejoy.cc/pc2/step-1.png') center center no-repeat;
+}
+
+#flow .icon:nth-child(3) {
+  background: url('//img.morejoy.cc/pc2/step-2.png') center center no-repeat;
+}
+
+#flow .icon:nth-child(5) {
+  background: url('//img.morejoy.cc/pc2/step-3.png') center center no-repeat;
+}
+
+#flow .icon:nth-child(7) {
+  background: url('//img.morejoy.cc/pc2/step-4.png') center center no-repeat;
+}
+
+#flow .icon:nth-child(9) {
+  background: url('//img.morejoy.cc/pc2/step-5.png') center center no-repeat;
+}
+
+#flow .icon:nth-child(11) {
+  background: url('//img.morejoy.cc/pc2/step-6.png') center center no-repeat;
+}
+
+#flow .icon:nth-child(13) {
+  background: url('//img.morejoy.cc/pc2/step-7.png') center center no-repeat;
+}
+
+#flow .arrow {
+  width: 55px;
+  height: 116px;
+  background: url('//img.morejoy.cc/pc2/next.png') center center no-repeat;
+  background-size: 14px 14px;
+}
+
+#flow .icon {}
+
+#flow .title,
+#partner .title,
+#report .title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+#flow .desc,
+#partner .desc,
+#report .desc {
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+  text-align: center;
+}
+
+#partner {
+  height: 458px;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+
+#partner .desc,
+#report .desc {
+  margin-bottom: 64px;
+}
+
+#partner .partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#partner .partners div {
+  width: 160px;
+  height: 66px;
+  flow-wrap: row;
+  margin: 0 57px 38px;
+}
+
+#partner .partners img {
+  width: 160px;
+  height: 66px;
+}
+
+#report {
+  min-width: 1220px;
+  height: 622px;
+  background: #f8f8f9;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+
+#report .reports {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#report .reports > div {
+  position: relative;
+  top: 0;
+  width: 300px;
+  height: 352px;
+  margin: 0 57px;
+  background: #fff;
+  transition: 0.3s all;
+}
+
+#report .reports > div:hover {
+  top: -3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  transition: 0.3s all;
+}
+
+#report .content {
+  padding: 16px 14px;
+}
+
+#report .biaoti {
+  font-size: 18px;
+  line-height: 25px;
+  color: #4a4a4a;
+  margin-bottom: 8px;
+}
+
+#report .neirong {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+#report .link {
+  display: flex;
+  padding: 0 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#report .link .jump {
+  font-size: 14px;
+  line-height: 20px;
+  color: #f0871d;
+}
+
+#report .link img {
+  height: 22px;
+}
+
+#report .reports  a {
+  text-decoration: none;
+  display: block;
+}
+
+
+
+#measure-submit-header {
+  background: #f0871d;
+  padding-top: 36px;
+  padding-bottom: 44px;
+  margin-bottom: 30px;
+}
+
+#measure-submit-header h3 {
+  font-size: 30px;
+  line-height: 42px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+#measure-submit-header p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.measure-box  {
+  padding: 0 0 20px 0 !important;
+  overflow: hidden;
+}
+
+
+.measure-box .swal2-close {
+  color: #fff !important;
+  font-weight: lighter;
+  transition: 0.6s all;
+}
+
+.measure-box .swal2-close:focus {
+  outline: 0 none transparent !important;
+}
+
+.measure-box .swal2-close:hover {
+  color: #fff !important;
+  opacity: 0.8;
+  transition: 0.6s all;
+}
+
+html .measure-box .swal2-header {
+  background: #f0871d !important;
+}
+
+html .measure-box .swal2-loading .swal2-confirm {
+  padding: .625em 1em !important;
+}
+
+html .measure-box .swal2-confirm {
+  background-color: #f0871d !important;
+  outline: none 0 transparent !important;
+  padding: .625em 4em !important;
+  border-radius: 0 !important;
+}
+
+html .measure-box .swal2-confirm:focus,
+html .measure-box .swal2-styled:focus {
+  outline: none 0 transparent !important;
+  box-shadow: 0 0 0 0 transparent !important;
+}
+
+#measure-submit > div {
+  text-align: center;
+}
+
+#measure-submit input {
+  width: 380px;
+  padding: 15px;
+  margin: 20px 0;
+  transition: border-color .3s,box-shadow .3s;
+  border: 1px solid #d9d9d9;
+  border-radius: .1875em;
+  font-size: 1.125em;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.06);
+  box-sizing: border-box;
+}
+
+#measure-submit input:focus {
+  border: 1px solid #b4dbed;
+  outline: 0;
+  box-shadow: 0 0 3px #c4e6f5;
+  outline-offset: -2px;
+}
+
+#measure-submit input::placeholder {
+  color: #ccc;
+  font-weight: lighter;
+}
+
+#product-list .item:first-child {
+  background: url('//img.morejoy.cc/pc2/tc-eco.png') center center no-repeat;
+  background-size: 1220px 400px;
+}
+
+#product-list .item:nth-child(2) {
+  background: url('//img.morejoy.cc/pc2/tc-min.png') center center no-repeat;
+  background-size: 1220px 400px;
+}
+
+#product-list .item:nth-child(3) {
+  background: url('//img.morejoy.cc/pc2/tc-zen.png') center center no-repeat;
+  background-size: 1220px 400px;
+}
+
+#top-banner {
+  background: url('//img.morejoy.cc/pc2/kitchen-top.png') center center;
+  background-size: auto 800px;
+}

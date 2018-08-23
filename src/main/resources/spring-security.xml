@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <security:http pattern="/login" security="none"/>
+    <security:http pattern="/static/**" security="none"/>
+
+    <!-- http安全配置 -->
+    <!--<security:http auto-config="true">-->
+        <!--<security:form-login login-page="/login" default-target-url="/index/"/>-->
+        <!--<security:logout logout-success-url="/login"/>-->
+        <!--<security:custom-filter ref="myFilter" before="FILTER_SECURITY_INTERCEPTOR"/>-->
+
+    <!--</security:http>-->
+
+    <!--<bean id="myFilter" class="com.j13.rumble.security.service.WebFilterSecurityInterceptor">-->
+        <!--<property name="authenticationManager"-->
+                  <!--ref="authManager"/>-->
+        <!--<property name="accessDecisionManager"-->
+                  <!--ref="myAccessDecisionManagerBean"/>-->
+        <!--<property name="securityMetadataSource"-->
+                  <!--ref="securityMetadataSource"/>-->
+    <!--</bean>-->
+
+    <!--<security:authentication-manager alias="authManager">-->
+        <!--<security:authentication-provider ref="daoAuthenticationProvider"></security:authentication-provider>-->
+    <!--</security:authentication-manager>-->
+
+
+    <!--<bean id="userDetailsService"-->
+          <!--class="com.j13.rumble.security.service.WebUserDetailService">-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; 访问决策器，决定某个用户具有的角色，是否有足够的权限去访问某个资源 &ndash;&gt;-->
+    <!--<bean id="myAccessDecisionManagerBean"-->
+          <!--class="com.j13.rumble.security.service.WebAccessDecisionManager">-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; 资源源数据定义，即定义某一资源可以被哪些角色访问 &ndash;&gt;-->
+    <!--<bean id="securityMetadataSource"-->
+          <!--class="com.j13.rumble.security.service.WebInvocationSecurityMetadataSourceService">-->
+        <!--<constructor-arg name="accountServerManager" ref="accountServerManager">-->
+        <!--</constructor-arg>-->
+
+    <!--</bean>-->
+
+    <!--&lt;!&ndash;自定义验证密码&ndash;&gt;-->
+    <!--<bean id="daoAuthenticationProvider" class="com.j13.rumble.security.service.WebDaoAuthenticationProvider">-->
+        <!--<property name="userDetailsService" ref="userDetailsService"></property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash;<bean id="accountServerManager" class="com.j13.evelynn.net.AccountServerManager">&ndash;&gt;-->
+    <!--&lt;!&ndash;</bean>&ndash;&gt;-->
+
+</beans>
